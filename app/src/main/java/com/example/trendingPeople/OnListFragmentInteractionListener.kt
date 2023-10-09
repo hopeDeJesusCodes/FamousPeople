@@ -1,4 +1,4 @@
-package com.example.movies
+package com.example.trendingPeople
 
 /**
  * This interface is used by the [MovieInfo] to ensure
@@ -9,5 +9,5 @@ package com.example.movies
 interface OnListFragmentInteractionListener {
 
 
-    fun onItemClick(item: InTheatersMovie)
+    fun onItemClick(item: TrendingPerson)
 }
