@@ -14,7 +14,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#A1000000" />
+        android:background="#C4000000" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
@@ -23,8 +23,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".MoviesFragment"
-        tools:listitem="@layout/fragment_best_seller_movie" />
+        tools:context=".PersonFragment"
+        tools:listitem="@layout/fragment_trending_person" />
 
     <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/progress"

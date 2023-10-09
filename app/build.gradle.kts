@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.movies"
+    namespace = "com.example.trendingPeople"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.movies"
+        applicationId = "com.example.trendingPeople"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

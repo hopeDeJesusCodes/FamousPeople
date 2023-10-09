@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/popcorn"
+    tools:context=".PersonDetailActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/popcorn" />
+
+    <!-- Headshot ImageView (Top-Left Corner) -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A1000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headshotCardView"
+        android:layout_width="175dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+    <ImageView
+        android:id="@+id/personHeadshot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Person's Headshot"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/posterCardView"
+        android:layout_width="175dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Movie Poster"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+</androidx.cardview.widget.CardView>
+
+    <!-- Person's Name TextView -->
+    <TextView
+        android:id="@+id/personNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person's Name"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headshotCardView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Famous TextView -->
+    <TextView
+        android:id="@+id/famousTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This person is famous!"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/personNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Movie Description TextView -->
+    <TextView
+        android:id="@+id/movieDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Description Here"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#FFFFFF"
+
+        app:layout_constraintTop_toBottomOf="@+id/famousTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft=".4dp"
+        android:layout_marginRight=".4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

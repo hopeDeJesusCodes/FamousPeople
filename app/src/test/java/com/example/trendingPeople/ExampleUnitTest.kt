@@ -1,4 +1,4 @@
-package com.example.movies
+package com.example.trendingPeople
 
 import org.junit.Test
 
